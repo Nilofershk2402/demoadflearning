@@ -1,0 +1,36 @@
+{
+	"name": "sqldemolearning",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azuredemosql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CustomerID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductCategory",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductSubCategory",
+				"type": "varchar"
+			},
+			{
+				"name": "SalesAmount",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Product"
+		}
+	}
+}
